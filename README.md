@@ -21,7 +21,7 @@ Make sure you have the following installed on your machine:
    ```
 
 1. **Update Arduino Port Configuration:**
-   To use the communication, modify the `portName` and `portNumber` in `server/index.js` to match your Arduino's port configuration.
+   To use the communication, modify the `portName` and `portNumber` in `server/server.js` to match your Arduino's port configuration.
    ```javascript
    const portName = "COM3"; // Change to your Arduino port
    const portNumber = 9600;
