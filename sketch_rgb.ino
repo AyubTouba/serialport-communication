@@ -17,14 +17,11 @@ void loop() {
   if (Serial.available() > 0) {
     // Read the incoming data
     String data = Serial.readStringUntil('\n');
-    Serial.println(data);
     Serial.print("Getting Color : ");
     Serial.println(data);
     // Parse the data and extract RGB values
     parseAndDisplayColor(data);
   }
-
-  // Your other loop code here
   delay(dt);
 }
 
